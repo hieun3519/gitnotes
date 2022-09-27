@@ -9,6 +9,10 @@ git help command // pull a man page of the command
 git status // show the status of the tree
 
 git diff // we use diff to tell us what changes in the file
+compares working directory against the staging tree
+
+git diff --staged // compares the repository and staging
+staged is alias for cached so git diff --cached is the same
 file a is in the repository
 file b is the working directory
 + // added line
