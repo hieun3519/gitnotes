@@ -6,7 +6,7 @@ git commit -m "insert message" // commit the changes and add message -m
 git log // history of the commit
 git help command // pull a man page of the command
 --grep // globally search for regular expression
-
+git status // show the status of the tree
 
 Git has tree
 working -> staging index -> repository
