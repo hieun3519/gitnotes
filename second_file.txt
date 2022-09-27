@@ -1,3 +1,15 @@
 This is a the second file.
 
 Untracked files - files not track by git
+Git has tree
+working -> staging index -> repository
+        add               commit
+git generates checksum for each commit label
+checksum algorithms convert data into a simple number
+same data always equals same checksum
+git uses SHA-1 hash algorithm
+40 character hexadecimal string (0-9, a-f)
+Data integrity
+
+HEAD Pointer - reference or point to new commit and always point to the tip
+of the current branch in repository

@@ -8,15 +8,8 @@ git help command // pull a man page of the command
 --grep // globally search for regular expression
 git status // show the status of the tree
 
-Git has tree
-working -> staging index -> repository
-        add               commit
-git generates checksum for each commit label
-checksum algorithms convert data into a simple number
-same data always equals same checksum
-git uses SHA-1 hash algorithm
-40 character hexadecimal string (0-9, a-f)
-Data integrity
-
-HEAD Pointer - reference or point to new commit and always point to the tip
-of the current branch in repository
+git diff // we use diff to tell us what changes in the file
+file a is in the repository
+file b is the working directory
++ // added line
+- // removed line
