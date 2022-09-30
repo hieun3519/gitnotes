@@ -13,3 +13,7 @@ Data integrity
 
 HEAD Pointer - reference or point to new commit and always point to the tip
 of the current branch in repository
+
+when renaming files, git recognize as two separate files where the og name is
+deleted and there is a new file. So commit the "new" file name and git rm there
+old file name

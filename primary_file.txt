@@ -17,3 +17,10 @@ file a is in the repository
 file b is the working directory
 + // added line
 - // removed line
+
+git rm name_of_the_file // delete file but there is still a copy in the repository
+you gotta do a git commit afterward
+or you can delete the file yourself
+
+git mv old_file_name.txt new_file_name.txt // moving the file to new file path(renaming)
+git mv file_name.txt folder_name/file_name.txt // moving the file into the folder
