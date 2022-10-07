@@ -1,22 +1,13 @@
 This is my first file.
 
-git add . // add all changes in the directory
+git add . // add all changes in the directory (staging)
 git commit -m "insert message" // commit the changes and add message -m
 ^ write present tense
 git log // history of the commit
+git log --oneline // shows well one line of the commit message
 git help command // pull a man page of the command
 --grep // globally search for regular expression
 git status // show the status of the tree
-
-git diff // we use diff to tell us what changes in the file
-compares working directory against the staging tree
-
-git diff --staged // compares the repository and staging
-staged is alias for cached so git diff --cached is the same
-file a is in the repository
-file b is the working directory
-+ // added line
-- // removed line
 
 git rm name_of_the_file // delete file but there is still a copy in the repository
 you gotta do a git commit afterward
@@ -24,3 +15,17 @@ or you can delete the file yourself
 
 git mv old_file_name.txt new_file_name.txt // moving the file to new file path(renaming)
 git mv file_name.txt folder_name/file_name.txt // moving the file into the folder
+git reset HEAD file_name.txt // unstage file_name.txt in staging
+
+git commit -a or git commit --all // stages and commits all changes to tracked files so you don't have to submit it to staging first
+you can also include m, so -am to do the commits all and write the message
+
+git add name* // * wild card, only add the files with the name
+
+when you do git commit, you can add git commit --amend filename to bring down old commit to staging and add new changes, this will changes the SHA value (note that it only works in the current HEAD)
+git rebase -i HEAD~n to access all commits between HEAD and nth commit prior to HEAD
+
+track empty directory
+git ls-tree HEAD // listing the files from the tree at the HEAD
+add invisible .gitkeep into a directory
+if you running a unix do touch file 

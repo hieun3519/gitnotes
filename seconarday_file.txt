@@ -17,3 +17,30 @@ of the current branch in repository
 when renaming files, git recognize as two separate files where the og name is
 deleted and there is a new file. So commit the "new" file name and git rm there
 old file name
+
+atomic commit
+- small commits
+- only affect a single aspect
+- easier to understand, to work with, and to find bugs
+- improves collaboration
+
+Ignore files
+- pattern matching (regular expressions) // *?[aeiou][0-9] logs/*.txt
+- negative expressions *.php
+- ignore all files in a directory with a trailing slash assets/videos/
+- comments // # this is a comments
+- blank lines are skipped
+
+what to Ignore
+compiled source code
+packages and compressed files
+logs and databases
+OS generated files
+user-iploaded assets
+
+globally ignore files
+ignore files in all repositories
+git config --gloval core.excludesfile ~/.gitignore_global  // .gitignore could be any name you want, git will use config files to ignore files in any repositories that the user is accessing
+
+git rm --cached file_name // "remove the file" from git so git doesn't checksum
+However you need to put the file_name in the .gitignore

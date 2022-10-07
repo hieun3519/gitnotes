@@ -1,0 +1,37 @@
+git diff // we use diff to tell us what changes in the file
+compares working directory against the staging tree
+
+git diff --staged // compares the repository and staging
+staged is alias for cached so git diff --cached is the same
+file a is in the repository
+file b is the working directory
++ // added line
+- // removed line
+
+seeing changes in diff command
+space bar - next page
+f - going backward
+b - going forward
+q - back to command line
+-S - either wrap or trail the lines
+git diff --color-words // see the changes in color
+
+git show SHA // shows the diff
+
+git diff oldestcommitSHA..endingcommitSHA // shows the difference between two commits, you can add --color-words at the end too
+or you can use HEAD instead of endingcommitSHA
+
+Undo changes in working directory
+git checkout -- file // checkout --(current directory) files and replaces the changes
+unstage a file
+git reset file HEAD
+
+Retrieve old versions
+git checkout oldSHA -- file
+make a new commit instead
+
+reverting a commit
+git revert SHA // pop a file with the revert commit message
+
+remove untracked files
+git clean // -i interactive walkthrough step -n dry run if you want to run it -f forces it to clean the file
